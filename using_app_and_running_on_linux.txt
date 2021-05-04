@@ -1,0 +1,6 @@
+- under terminal upload your application
+- make directory to /etc/ir
+- copy paste your script configuration in call name config.json to /etc/ir
+- upload your ir.service into /lib/systemd/system
+- generate ssl certivicate
+    $ openssl req  -nodes -new -x509  -keyout key.pem -out cert.pem

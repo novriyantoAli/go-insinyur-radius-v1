@@ -1,0 +1,35 @@
+{
+    "server": {
+        "address": ":3031",
+        "tlsAddress": ":1213"
+    },
+    "database": {
+        "host": "localhost",
+        "port": "9903",
+        "user": "root",
+        "pass": "toor",
+        "name": "radius"
+    },
+    "administrator": {
+        "username": "user1",
+        "password": "user1",
+        "key": "das3qLjd12Hsmc",
+        "mode": "bussiness",
+        "triggerName": "radacct_after_insert_trigger",
+        "scheduler": 2
+    },
+    "telegram": {
+        "token": "1317330675:AAFdrJuR2v8Edm-SVb-9spYmZ83dRUHlclc",
+        "register": "daftar",
+        "balance": "saldo",
+        "menu": "menu",
+        "refill": "refill",
+        "customer": "customer",
+        "report": "laporan",
+        "split": "/"
+    },
+    "context": {
+        "timeout": 9000
+    },
+    "debug": true
+}
