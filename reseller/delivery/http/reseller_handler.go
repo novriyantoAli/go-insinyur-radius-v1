@@ -22,6 +22,12 @@ type transaction struct {
 	id int `json:"id_package" validate:"required"`
 }
 
+type changeprofile struct {
+	Voucher string `json:"voucher"`
+	Profile string `json:"profile"`
+	Exp     string `json:"exp"`
+}
+
 // type login struct {
 // 	Username string `json:"username" validate:"required"`
 // 	Password string `json:"password" validate:"required"`
@@ -91,6 +97,29 @@ func (hn *resellerHandler) PostTransaction(e echo.Context) error {
 	}
 
 	return e.JSON(http.StatusOK, res)
+}
+
+func (h *resellerHandler) PostChangeProfile(e echo.Context) error {
+	voucher := e.FormValue("voucher")
+	profileName := e.FormValue("profile")
+
+	if voucher == "" {
+		logrus.Warning("input parameter not valid")
+		return e.JSON(http.StatusFailedDependency, helper.ResponseErrorMessage{Message: "input parameter not valid"})
+	}
+
+	if profileName == "" {
+		logrus.Warning("input parameter not valid")
+		return e.JSON(http.StatusFailedDependency, helper.ResponseErrorMessage{Message: "input parameter not valid"})
+	}
+
+	res, err := h.ucase.ChangeProfile(e.Request().Context(), voucher, profileName)
+	if err != nil {
+		logrus.Error(err)
+		return e.JSON(helper.TranslateError(err), ResponseError{Message: err.Error()})
+	}
+
+	return e.JSON(http.StatusOK, changeprofile{Voucher: voucher, Profile: profileName, Exp: res})
 }
 
 func (h *resellerHandler) PostChangePackage(e echo.Context) error {

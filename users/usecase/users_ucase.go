@@ -36,6 +36,8 @@ func hashAndSalt(pwd []byte) string {
 	// GenerateFromPassword returns a byte slice so we need to
 	// convert the bytes to a string and return it
 	return string(hash)
+	// 090816
+	// $2a$04$p5iYeqT0BZa5iZfllD5IQOhMzZqB4vqitMurDwpWdaOyia0QEJ8DO
 }
 
 func comparePasswords(hashedPwd string, plainPwd []byte) bool {

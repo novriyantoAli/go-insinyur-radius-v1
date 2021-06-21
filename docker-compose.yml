@@ -1,12 +1,10 @@
 version: '3.2'
 
 services:
-   db_mysql_reseller:
+   db_mysql_reseller_v1:
       image: mysql:8.0
-      container_name: mysql_server_radius_reseller
+      container_name: mysql_server_radius_reseller_v1
       restart: always
-      volumes: 
-         - /home/rhein/Programing/Golang/go-insinyur-radius/mysql:/var/lib/mysql
       ports:
        - '9903:3306'
       environment:
@@ -14,11 +12,11 @@ services:
 
    app:
       depends_on:
-       - db_mysql_reseller
+       - db_mysql_reseller_v1
       image: phpmyadmin/phpmyadmin
-      container_name: phpmyadmin_radius_reseller
+      container_name: phpmyadmin_radius_reseller_v1
       restart: always
       ports:
        - '8800:80'
       environment:
-        PMA_HOST: db_mysql_reseller
+        PMA_HOST: db_mysql_reseller_v1

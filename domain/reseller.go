@@ -13,5 +13,6 @@ type ResellerRepository interface {
 type ResellerUsecase interface {
 	Transaction(c context.Context, idUsers int64, idPackage int64) (res Transaction, err error)
 	Balance(c context.Context, idUsers int64) (res ResellerBalance, err error)
-	ChangePackage(c context.Context, voucher string, profile string)(err error)
+	ChangePackage(c context.Context, voucher string, profile string) (err error)
+	ChangeProfile(c context.Context, voucher string, profile string) (res string, err error)
 }

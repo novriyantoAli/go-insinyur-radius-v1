@@ -25,6 +25,109 @@ func NewUsecase(timeout time.Duration, r domain.ResellerRepository, pr domain.Pa
 	return &resellerUsecase{Timeout: timeout, Repository: r, PackageRepository: pr, RadcheckRepository: rcr, TransactionRepository: tr, RadacctRepository: rra}
 }
 
+func (u *resellerUsecase) ChangeProfile(c context.Context, voucher string, profile string) (res string, err error) {
+	ctx, cancel := context.WithTimeout(c, u.Timeout)
+	defer cancel()
+
+	attr := "User-Profile"
+
+	radcheck := domain.Radcheck{}
+	radcheck.Username = &voucher
+	radcheck.Attribute = &attr
+
+	rcArr, err := u.RadcheckRepository.Get(ctx, radcheck)
+	if err != nil {
+		logrus.Error(err)
+		return "", err
+	}
+
+	if len(rcArr) <= 0 {
+		logrus.Error("item profile not found: ", voucher)
+		return "", domain.ErrNotFound
+	}
+
+	if *rcArr[0].Value == profile {
+		logrus.Error("voucher in profile")
+		return "", domain.ErrConflict
+	}
+
+	// check apakah memungkinkan untuk di update dengan melihat apakah dia mempunyai masa aktiv
+	// jika telah expired maka tolak semua pembaharuan
+	// jika aktiv maka lakukan update profile
+
+	wita, err := time.LoadLocation("Asia/Makassar")
+
+	if err != nil {
+		logrus.Error(err)
+		return "", domain.ErrInternalServerError
+	}
+
+	layoutFormat := "02 Jan 2006 15:04:05"
+
+	attr = "Expiration"
+
+	rcExpiration := domain.Radcheck{}
+	rcExpiration.Username = &voucher
+	rcExpiration.Attribute = &attr
+
+	rcExpArr, err := u.RadcheckRepository.Get(ctx, radcheck)
+	if err != nil {
+		logrus.Error(err)
+		return "", err
+	}
+
+	if len(rcExpArr) <= 0 {
+		logrus.Error("item expiration not found: ", voucher)
+		return "", domain.ErrNotFound
+	}
+
+	date, err := time.ParseInLocation(layoutFormat, *rcExpArr[0].Value, wita)
+	if err != nil {
+		logrus.Error(err)
+		return "", err
+	}
+
+	duration := time.Now().Sub(date)
+	// if not have duration, kita tidak dapat melanjutkan
+	if math.Signbit(duration.Seconds()) == false {
+		logrus.Error("expired voucher cannot process")
+		return "", domain.ErrInternalServerError
+	}
+
+	// ok everithing ok lets change package
+	rcUpdate := domain.Radcheck{}
+	rcUpdate.ID = rcArr[0].ID
+	rcUpdate.Username = rcArr[0].Username
+	rcUpdate.Attribute = rcArr[0].Attribute
+	rcUpdate.OP = rcArr[0].OP
+	rcUpdate.Value = &profile
+
+	err = u.RadcheckRepository.Update(ctx, rcUpdate)
+	if err != nil {
+		logrus.Error(err)
+		return "", err
+	}
+
+	lRadacct := domain.Radacct{}
+	lRadacct.Username = rcArr[0].Username
+	radacct, err := u.RadacctRepository.Get(ctx, lRadacct)
+	if err != nil {
+		logrus.Error(err)
+	} else if len(radacct) <= 0 {
+		logrus.Error("user not found in table radaccr: ", *rcArr[0].Username)
+	} else {
+		cmd := exec.Command("sh", "-c", `echo "Acct-Session-Id=`+*radacct[0].Acctsessionid+`,User-Name=`+*radacct[0].Username+`,NAS-IP-Address=`+*radacct[0].Nasipaddress+`,Framed-IP-Address=`+*radacct[0].Framedipaddress+`" | radclient -x `+*radacct[0].Nasipaddress+`:3799 disconnect '`+*radacct[0].Secret+`'`)
+		errNotSend := cmd.Run()
+		if errNotSend != nil {
+			logrus.Error(err)
+		}
+	}
+
+	res = *rcExpArr[0].Value
+
+	return
+}
+
 func (u *resellerUsecase) ChangePackage(c context.Context, voucher string, profile string) (err error) {
 	ctx, cancel := context.WithTimeout(c, u.Timeout)
 	defer cancel()

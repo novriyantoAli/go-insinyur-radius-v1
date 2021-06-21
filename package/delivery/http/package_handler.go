@@ -23,6 +23,12 @@ type transaction struct {
 	idPackage int64 `json:"id_package" validate:"required"`
 }
 
+type price struct {
+	name     string `json:"name"`
+	validity string `json:"validity"`
+	price    string `json:"price"`
+}
+
 type packageHandler struct {
 	ucase domain.PackageUsecase
 }
@@ -35,8 +41,29 @@ func NewHandler(e *echo.Echo, uc domain.PackageUsecase) {
 		SigningKey: []byte(viper.GetString(`server.secret`)),
 	})
 
+	e.GET("/price", handler.FetchPublic)
+
 	group := e.Group("/api/package", isLoggedIn)
 	group.GET("", handler.Fetch)
+}
+
+func (h *packageHandler) FetchPublic(e echo.Context) error {
+	res, err := h.ucase.Fetch(e.Request().Context(), 0, 10)
+	if err != nil {
+		logrus.Error(err)
+		return e.JSON(helper.TranslateError(err), ResponseError{Message: err.Error()})
+	}
+
+	prArr := make([]price, 0)
+	for _, d := range res.Data {
+		pr := price{}
+		pr.name = *d.Name
+		pr.validity = strconv.FormatInt(*d.ValidityValue, 10) + *d.ValidityUnit
+		pr.price = strconv.FormatInt((*d.Price + *d.Margin), 10)
+		prArr = append(prArr, pr)
+	}
+
+	return e.JSON(http.StatusOK, prArr)
 }
 
 func (h *packageHandler) Fetch(e echo.Context) error {
