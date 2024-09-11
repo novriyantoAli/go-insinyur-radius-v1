@@ -12518,3 +12518,1564 @@ Received Disconnect-ACK Id 87 from 10.0.1.246:3799 to 10.0.1.244:58968 length 34
 [31mERRO[0m[2024-09-11T19:22:02+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
 [31mERRO[0m[2024-09-11T19:22:18+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
 [31mERRO[0m[2024-09-11T19:22:33+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[36mINFO[0m[2024-09-11T19:53:55+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T19:53:55+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T19:53:55+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T19:53:55+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[31mERRO[0m[2024-09-11T19:54:10+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:54:25+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:54:40+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:54:55+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:55:11+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:55:26+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:55:41+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:55:56+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:56:11+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:56:26+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:56:41+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:56:56+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[36mINFO[0m[2024-09-11T19:57:14+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T19:57:14+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T19:57:14+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T19:57:14+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[31mERRO[0m[2024-09-11T19:57:29+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:57:44+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:57:59+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:58:14+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:58:29+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:58:44+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T19:58:59+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[36mINFO[0m[2024-09-11T19:59:08+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T19:59:08+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T19:59:08+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T19:59:08+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[31mERRO[0m[2024-09-11T19:59:23+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T19:59:38+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T19:59:53+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:00:08+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:00:23+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:00:38+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:00:53+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:01:08+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:01:23+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:01:38+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:01:53+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:02:08+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[36mINFO[0m[2024-09-11T20:02:18+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T20:02:18+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T20:02:18+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T20:02:18+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[31mERRO[0m[2024-09-11T20:02:33+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:02:48+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:03:03+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:03:18+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:03:33+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:03:48+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:04:03+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:04:18+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:04:33+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:04:48+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:05:03+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:05:18+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:05:34+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:05:49+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:06:04+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:06:19+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:06:34+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:06:49+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:07:04+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:07:19+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:07:34+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:07:49+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:08:04+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:08:19+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:08:34+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:08:49+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:09:04+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:09:19+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:09:34+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:09:49+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:10:04+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:10:19+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[31mERRO[0m[2024-09-11T20:10:34+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: exit status 1              
+[36mINFO[0m[2024-09-11T20:10:34+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() time to sleep                                
+[36mINFO[0m[2024-09-11T20:11:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T20:11:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T20:11:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T20:11:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[31mERRO[0m[2024-09-11T20:12:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 50 from 0.0.0.0:51586 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+Sent Disconnect-Request Id 50 from 0.0.0.0:51586 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+Sent Disconnect-Request Id 50 from 0.0.0.0:51586 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+(0) No reply from server for ID 50 socket 3 
+[31mERRO[0m[2024-09-11T20:12:20+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 207 from 0.0.0.0:45910 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 207 from 0.0.0.0:45910 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 207 from 0.0.0.0:45910 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+(0) No reply from server for ID 207 socket 3 
+[31mERRO[0m[2024-09-11T20:12:35+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 89 from 0.0.0.0:44668 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+Sent Disconnect-Request Id 89 from 0.0.0.0:44668 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+Sent Disconnect-Request Id 89 from 0.0.0.0:44668 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+(0) No reply from server for ID 89 socket 3 
+[31mERRO[0m[2024-09-11T20:12:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 91 from 0.0.0.0:35151 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+Sent Disconnect-Request Id 91 from 0.0.0.0:35151 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+Sent Disconnect-Request Id 91 from 0.0.0.0:35151 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+(0) No reply from server for ID 91 socket 3 
+[31mERRO[0m[2024-09-11T20:13:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 162 from 0.0.0.0:56246 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+Sent Disconnect-Request Id 162 from 0.0.0.0:56246 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+Sent Disconnect-Request Id 162 from 0.0.0.0:56246 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+(0) No reply from server for ID 162 socket 3 
+[31mERRO[0m[2024-09-11T20:13:20+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 199 from 0.0.0.0:40524 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55d2f"
+	User-Name = "5hck"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.60.114
+Sent Disconnect-Request Id 199 from 0.0.0.0:40524 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55d2f"
+	User-Name = "5hck"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.60.114
+Sent Disconnect-Request Id 199 from 0.0.0.0:40524 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55d2f"
+	User-Name = "5hck"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.60.114
+(0) No reply from server for ID 199 socket 3 
+[31mERRO[0m[2024-09-11T20:13:35+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 167 from 0.0.0.0:52932 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c77"
+	User-Name = "ygqvw8v"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.143
+Sent Disconnect-Request Id 167 from 0.0.0.0:52932 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c77"
+	User-Name = "ygqvw8v"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.143
+Sent Disconnect-Request Id 167 from 0.0.0.0:52932 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c77"
+	User-Name = "ygqvw8v"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.143
+(0) No reply from server for ID 167 socket 3 
+[31mERRO[0m[2024-09-11T20:13:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 53 from 0.0.0.0:45208 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55ea1"
+	User-Name = "cxrs9"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.222
+Sent Disconnect-Request Id 53 from 0.0.0.0:45208 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55ea1"
+	User-Name = "cxrs9"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.222
+Sent Disconnect-Request Id 53 from 0.0.0.0:45208 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55ea1"
+	User-Name = "cxrs9"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.222
+(0) No reply from server for ID 53 socket 3 
+[31mERRO[0m[2024-09-11T20:14:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 148 from 0.0.0.0:59062 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54a1c"
+	User-Name = "huwv2ab"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.167
+Sent Disconnect-Request Id 148 from 0.0.0.0:59062 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54a1c"
+	User-Name = "huwv2ab"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.167
+Sent Disconnect-Request Id 148 from 0.0.0.0:59062 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54a1c"
+	User-Name = "huwv2ab"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.167
+(0) No reply from server for ID 148 socket 3 
+[31mERRO[0m[2024-09-11T20:14:20+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 28 from 0.0.0.0:43319 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54d3d"
+	User-Name = "dyrb3z3"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.31
+Sent Disconnect-Request Id 28 from 0.0.0.0:43319 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54d3d"
+	User-Name = "dyrb3z3"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.31
+Sent Disconnect-Request Id 28 from 0.0.0.0:43319 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54d3d"
+	User-Name = "dyrb3z3"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.31
+(0) No reply from server for ID 28 socket 3 
+[31mERRO[0m[2024-09-11T20:14:35+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 138 from 0.0.0.0:38242 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c75"
+	User-Name = "5qz2bpx"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.120
+Sent Disconnect-Request Id 138 from 0.0.0.0:38242 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c75"
+	User-Name = "5qz2bpx"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.120
+Sent Disconnect-Request Id 138 from 0.0.0.0:38242 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c75"
+	User-Name = "5qz2bpx"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.120
+(0) No reply from server for ID 138 socket 3 
+[31mERRO[0m[2024-09-11T20:14:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 175 from 0.0.0.0:48520 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5565e"
+	User-Name = "kzuneb8"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.78
+Sent Disconnect-Request Id 175 from 0.0.0.0:48520 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5565e"
+	User-Name = "kzuneb8"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.78
+Sent Disconnect-Request Id 175 from 0.0.0.0:48520 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5565e"
+	User-Name = "kzuneb8"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.78
+(0) No reply from server for ID 175 socket 3 
+[31mERRO[0m[2024-09-11T20:15:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 40 from 0.0.0.0:43406 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a540cc"
+	User-Name = "5hbs5zh"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.32.155
+Sent Disconnect-Request Id 40 from 0.0.0.0:43406 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a540cc"
+	User-Name = "5hbs5zh"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.32.155
+Sent Disconnect-Request Id 40 from 0.0.0.0:43406 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a540cc"
+	User-Name = "5hbs5zh"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.32.155
+(0) No reply from server for ID 40 socket 3 
+[31mERRO[0m[2024-09-11T20:15:20+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 136 from 0.0.0.0:46982 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a5518d"
+	User-Name = "zue37"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.49.72
+Sent Disconnect-Request Id 136 from 0.0.0.0:46982 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a5518d"
+	User-Name = "zue37"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.49.72
+Sent Disconnect-Request Id 136 from 0.0.0.0:46982 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a5518d"
+	User-Name = "zue37"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.49.72
+(0) No reply from server for ID 136 socket 3 
+[31mERRO[0m[2024-09-11T20:15:35+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 106 from 0.0.0.0:48196 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54ba7"
+	User-Name = "yv2fuhn"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.103
+Sent Disconnect-Request Id 106 from 0.0.0.0:48196 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54ba7"
+	User-Name = "yv2fuhn"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.103
+Sent Disconnect-Request Id 106 from 0.0.0.0:48196 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54ba7"
+	User-Name = "yv2fuhn"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.103
+(0) No reply from server for ID 106 socket 3 
+[31mERRO[0m[2024-09-11T20:15:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 71 from 0.0.0.0:51153 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5543e"
+	User-Name = "w9uybra"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.23.54
+Sent Disconnect-Request Id 71 from 0.0.0.0:51153 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5543e"
+	User-Name = "w9uybra"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.23.54
+Sent Disconnect-Request Id 71 from 0.0.0.0:51153 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5543e"
+	User-Name = "w9uybra"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.23.54
+(0) No reply from server for ID 71 socket 3 
+[31mERRO[0m[2024-09-11T20:16:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 113 from 0.0.0.0:49102 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55e4d"
+	User-Name = "7a4e"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.4.114
+Sent Disconnect-Request Id 113 from 0.0.0.0:49102 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55e4d"
+	User-Name = "7a4e"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.4.114
+Sent Disconnect-Request Id 113 from 0.0.0.0:49102 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55e4d"
+	User-Name = "7a4e"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.4.114
+(0) No reply from server for ID 113 socket 3 
+[31mERRO[0m[2024-09-11T20:16:20+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 35 from 0.0.0.0:39150 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54f5a"
+	User-Name = "zea2guz"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.47.28
+Sent Disconnect-Request Id 35 from 0.0.0.0:39150 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54f5a"
+	User-Name = "zea2guz"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.47.28
+Sent Disconnect-Request Id 35 from 0.0.0.0:39150 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54f5a"
+	User-Name = "zea2guz"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.47.28
+(0) No reply from server for ID 35 socket 3 
+[31mERRO[0m[2024-09-11T20:16:36+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 156 from 0.0.0.0:35185 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d20"
+	User-Name = "7ngtbbh"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 156 from 0.0.0.0:35185 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d20"
+	User-Name = "7ngtbbh"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 156 from 0.0.0.0:35185 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d20"
+	User-Name = "7ngtbbh"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+(0) No reply from server for ID 156 socket 3 
+[31mERRO[0m[2024-09-11T20:16:51+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 105 from 0.0.0.0:34856 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55b58"
+	User-Name = "4g85qks"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.95
+Sent Disconnect-Request Id 105 from 0.0.0.0:34856 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55b58"
+	User-Name = "4g85qks"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.95
+Sent Disconnect-Request Id 105 from 0.0.0.0:34856 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55b58"
+	User-Name = "4g85qks"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.95
+(0) No reply from server for ID 105 socket 3 
+[31mERRO[0m[2024-09-11T20:17:06+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 173 from 0.0.0.0:46384 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55d0f"
+	User-Name = "yx8um"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.75
+Sent Disconnect-Request Id 173 from 0.0.0.0:46384 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55d0f"
+	User-Name = "yx8um"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.75
+Sent Disconnect-Request Id 173 from 0.0.0.0:46384 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55d0f"
+	User-Name = "yx8um"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.75
+(0) No reply from server for ID 173 socket 3 
+[31mERRO[0m[2024-09-11T20:17:21+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 99 from 0.0.0.0:39175 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55364"
+	User-Name = "7uwqfya"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.32.215
+Sent Disconnect-Request Id 99 from 0.0.0.0:39175 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55364"
+	User-Name = "7uwqfya"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.32.215
+Sent Disconnect-Request Id 99 from 0.0.0.0:39175 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55364"
+	User-Name = "7uwqfya"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.32.215
+(0) No reply from server for ID 99 socket 3 
+[31mERRO[0m[2024-09-11T20:17:36+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 103 from 0.0.0.0:60691 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55fb3"
+	User-Name = "z6mwcut"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.153
+Sent Disconnect-Request Id 103 from 0.0.0.0:60691 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55fb3"
+	User-Name = "z6mwcut"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.153
+Sent Disconnect-Request Id 103 from 0.0.0.0:60691 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55fb3"
+	User-Name = "z6mwcut"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.153
+(0) No reply from server for ID 103 socket 3 
+[31mERRO[0m[2024-09-11T20:17:51+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 222 from 0.0.0.0:40700 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5546e"
+	User-Name = "a947d32"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.43.196
+Sent Disconnect-Request Id 222 from 0.0.0.0:40700 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5546e"
+	User-Name = "a947d32"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.43.196
+Sent Disconnect-Request Id 222 from 0.0.0.0:40700 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5546e"
+	User-Name = "a947d32"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.43.196
+(0) No reply from server for ID 222 socket 3 
+[31mERRO[0m[2024-09-11T20:18:06+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 41 from 0.0.0.0:54367 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d4a"
+	User-Name = "7b8drk6"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.42
+Sent Disconnect-Request Id 41 from 0.0.0.0:54367 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d4a"
+	User-Name = "7b8drk6"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.42
+Sent Disconnect-Request Id 41 from 0.0.0.0:54367 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d4a"
+	User-Name = "7b8drk6"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.42
+(0) No reply from server for ID 41 socket 3 
+[31mERRO[0m[2024-09-11T20:18:21+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 227 from 0.0.0.0:49670 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55b87"
+	User-Name = "x3a5mm2"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.51.116
+Sent Disconnect-Request Id 227 from 0.0.0.0:49670 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55b87"
+	User-Name = "x3a5mm2"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.51.116
+Sent Disconnect-Request Id 227 from 0.0.0.0:49670 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55b87"
+	User-Name = "x3a5mm2"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.51.116
+(0) No reply from server for ID 227 socket 3 
+[31mERRO[0m[2024-09-11T20:18:36+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 247 from 0.0.0.0:32969 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5587a"
+	User-Name = "wyyvsg5"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.71.49
+Sent Disconnect-Request Id 247 from 0.0.0.0:32969 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5587a"
+	User-Name = "wyyvsg5"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.71.49
+Sent Disconnect-Request Id 247 from 0.0.0.0:32969 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5587a"
+	User-Name = "wyyvsg5"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.71.49
+(0) No reply from server for ID 247 socket 3 
+[31mERRO[0m[2024-09-11T20:18:51+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 185 from 0.0.0.0:33921 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55978"
+	User-Name = "z36kd"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.88
+Sent Disconnect-Request Id 185 from 0.0.0.0:33921 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55978"
+	User-Name = "z36kd"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.88
+Sent Disconnect-Request Id 185 from 0.0.0.0:33921 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55978"
+	User-Name = "z36kd"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.88
+(0) No reply from server for ID 185 socket 3 
+[31mERRO[0m[2024-09-11T20:19:06+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 144 from 0.0.0.0:36205 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a558de"
+	User-Name = "wy9h38h"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.65.99
+Sent Disconnect-Request Id 144 from 0.0.0.0:36205 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a558de"
+	User-Name = "wy9h38h"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.65.99
+Sent Disconnect-Request Id 144 from 0.0.0.0:36205 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a558de"
+	User-Name = "wy9h38h"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.65.99
+(0) No reply from server for ID 144 socket 3 
+[31mERRO[0m[2024-09-11T20:19:21+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 113 from 0.0.0.0:51159 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55f2c"
+	User-Name = "cafdwsu"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.78.126
+Sent Disconnect-Request Id 113 from 0.0.0.0:51159 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55f2c"
+	User-Name = "cafdwsu"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.78.126
+Sent Disconnect-Request Id 113 from 0.0.0.0:51159 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55f2c"
+	User-Name = "cafdwsu"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.78.126
+(0) No reply from server for ID 113 socket 3 
+[31mERRO[0m[2024-09-11T20:19:36+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 132 from 0.0.0.0:45575 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55941"
+	User-Name = "dqar8ak"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.59.216
+Sent Disconnect-Request Id 132 from 0.0.0.0:45575 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55941"
+	User-Name = "dqar8ak"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.59.216
+Sent Disconnect-Request Id 132 from 0.0.0.0:45575 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55941"
+	User-Name = "dqar8ak"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.59.216
+(0) No reply from server for ID 132 socket 3 
+[31mERRO[0m[2024-09-11T20:19:51+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 74 from 0.0.0.0:45088 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a559ee"
+	User-Name = "xhv6"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.35.18
+Sent Disconnect-Request Id 74 from 0.0.0.0:45088 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a559ee"
+	User-Name = "xhv6"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.35.18
+Sent Disconnect-Request Id 74 from 0.0.0.0:45088 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a559ee"
+	User-Name = "xhv6"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.35.18
+(0) No reply from server for ID 74 socket 3 
+[31mERRO[0m[2024-09-11T20:20:06+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 44 from 0.0.0.0:46693 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55bd9"
+	User-Name = "ppffc9z"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.23.63
+Sent Disconnect-Request Id 44 from 0.0.0.0:46693 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55bd9"
+	User-Name = "ppffc9z"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.23.63
+Sent Disconnect-Request Id 44 from 0.0.0.0:46693 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55bd9"
+	User-Name = "ppffc9z"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.23.63
+(0) No reply from server for ID 44 socket 3 
+[36mINFO[0m[2024-09-11T20:20:06+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() time to sleep                                
+[36mINFO[0m[2024-09-11T20:22:06+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[31mERRO[0m[2024-09-11T20:22:21+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 139 from 0.0.0.0:39562 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+Sent Disconnect-Request Id 139 from 0.0.0.0:39562 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+Sent Disconnect-Request Id 139 from 0.0.0.0:39562 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+(0) No reply from server for ID 139 socket 3 
+[31mERRO[0m[2024-09-11T20:22:36+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 36 from 0.0.0.0:34726 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 36 from 0.0.0.0:34726 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 36 from 0.0.0.0:34726 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+(0) No reply from server for ID 36 socket 3 
+[31mERRO[0m[2024-09-11T20:22:51+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 235 from 0.0.0.0:55275 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+Sent Disconnect-Request Id 235 from 0.0.0.0:55275 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+Sent Disconnect-Request Id 235 from 0.0.0.0:55275 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+(0) No reply from server for ID 235 socket 3 
+[31mERRO[0m[2024-09-11T20:23:06+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 26 from 0.0.0.0:57804 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+Sent Disconnect-Request Id 26 from 0.0.0.0:57804 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+Sent Disconnect-Request Id 26 from 0.0.0.0:57804 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+(0) No reply from server for ID 26 socket 3 
+[31mERRO[0m[2024-09-11T20:23:21+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 10 from 0.0.0.0:56516 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+Sent Disconnect-Request Id 10 from 0.0.0.0:56516 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+Sent Disconnect-Request Id 10 from 0.0.0.0:56516 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+(0) No reply from server for ID 10 socket 3 
+[31mERRO[0m[2024-09-11T20:23:37+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 27 from 0.0.0.0:35555 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55d2f"
+	User-Name = "5hck"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.60.114
+Sent Disconnect-Request Id 27 from 0.0.0.0:35555 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55d2f"
+	User-Name = "5hck"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.60.114
+Sent Disconnect-Request Id 27 from 0.0.0.0:35555 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55d2f"
+	User-Name = "5hck"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.60.114
+(0) No reply from server for ID 27 socket 3 
+[31mERRO[0m[2024-09-11T20:23:52+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 203 from 0.0.0.0:60465 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c77"
+	User-Name = "ygqvw8v"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.143
+Sent Disconnect-Request Id 203 from 0.0.0.0:60465 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c77"
+	User-Name = "ygqvw8v"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.143
+Sent Disconnect-Request Id 203 from 0.0.0.0:60465 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c77"
+	User-Name = "ygqvw8v"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.143
+(0) No reply from server for ID 203 socket 3 
+[31mERRO[0m[2024-09-11T20:24:07+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 118 from 0.0.0.0:56060 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55ea1"
+	User-Name = "cxrs9"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.222
+Sent Disconnect-Request Id 118 from 0.0.0.0:56060 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55ea1"
+	User-Name = "cxrs9"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.222
+Sent Disconnect-Request Id 118 from 0.0.0.0:56060 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55ea1"
+	User-Name = "cxrs9"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.222
+(0) No reply from server for ID 118 socket 3 
+[31mERRO[0m[2024-09-11T20:24:22+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 32 from 0.0.0.0:41366 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54a1c"
+	User-Name = "huwv2ab"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.167
+Sent Disconnect-Request Id 32 from 0.0.0.0:41366 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54a1c"
+	User-Name = "huwv2ab"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.167
+Sent Disconnect-Request Id 32 from 0.0.0.0:41366 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54a1c"
+	User-Name = "huwv2ab"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.167
+(0) No reply from server for ID 32 socket 3 
+[31mERRO[0m[2024-09-11T20:24:37+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 101 from 0.0.0.0:60815 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54d3d"
+	User-Name = "dyrb3z3"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.31
+Sent Disconnect-Request Id 101 from 0.0.0.0:60815 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54d3d"
+	User-Name = "dyrb3z3"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.31
+Sent Disconnect-Request Id 101 from 0.0.0.0:60815 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54d3d"
+	User-Name = "dyrb3z3"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.31
+(0) No reply from server for ID 101 socket 3 
+[31mERRO[0m[2024-09-11T20:24:52+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 94 from 0.0.0.0:45564 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c75"
+	User-Name = "5qz2bpx"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.120
+Sent Disconnect-Request Id 94 from 0.0.0.0:45564 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c75"
+	User-Name = "5qz2bpx"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.120
+Sent Disconnect-Request Id 94 from 0.0.0.0:45564 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c75"
+	User-Name = "5qz2bpx"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.120
+(0) No reply from server for ID 94 socket 3 
+[31mERRO[0m[2024-09-11T20:25:07+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 118 from 0.0.0.0:59742 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5565e"
+	User-Name = "kzuneb8"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.78
+Sent Disconnect-Request Id 118 from 0.0.0.0:59742 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5565e"
+	User-Name = "kzuneb8"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.78
+Sent Disconnect-Request Id 118 from 0.0.0.0:59742 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5565e"
+	User-Name = "kzuneb8"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.78
+(0) No reply from server for ID 118 socket 3 
+[31mERRO[0m[2024-09-11T20:25:22+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 104 from 0.0.0.0:60917 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a540cc"
+	User-Name = "5hbs5zh"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.32.155
+Sent Disconnect-Request Id 104 from 0.0.0.0:60917 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a540cc"
+	User-Name = "5hbs5zh"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.32.155
+Sent Disconnect-Request Id 104 from 0.0.0.0:60917 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a540cc"
+	User-Name = "5hbs5zh"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.32.155
+(0) No reply from server for ID 104 socket 3 
+[31mERRO[0m[2024-09-11T20:25:37+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 14 from 0.0.0.0:54217 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a5518d"
+	User-Name = "zue37"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.49.72
+Sent Disconnect-Request Id 14 from 0.0.0.0:54217 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a5518d"
+	User-Name = "zue37"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.49.72
+Sent Disconnect-Request Id 14 from 0.0.0.0:54217 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a5518d"
+	User-Name = "zue37"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.49.72
+(0) No reply from server for ID 14 socket 3 
+[31mERRO[0m[2024-09-11T20:25:52+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 162 from 0.0.0.0:38975 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54ba7"
+	User-Name = "yv2fuhn"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.103
+Sent Disconnect-Request Id 162 from 0.0.0.0:38975 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54ba7"
+	User-Name = "yv2fuhn"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.103
+Sent Disconnect-Request Id 162 from 0.0.0.0:38975 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54ba7"
+	User-Name = "yv2fuhn"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.103
+(0) No reply from server for ID 162 socket 3 
+[31mERRO[0m[2024-09-11T20:26:07+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 158 from 0.0.0.0:54893 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5543e"
+	User-Name = "w9uybra"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.23.54
+Sent Disconnect-Request Id 158 from 0.0.0.0:54893 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5543e"
+	User-Name = "w9uybra"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.23.54
+Sent Disconnect-Request Id 158 from 0.0.0.0:54893 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5543e"
+	User-Name = "w9uybra"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.23.54
+(0) No reply from server for ID 158 socket 3 
+[31mERRO[0m[2024-09-11T20:26:22+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 212 from 0.0.0.0:49174 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55e4d"
+	User-Name = "7a4e"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.4.114
+Sent Disconnect-Request Id 212 from 0.0.0.0:49174 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55e4d"
+	User-Name = "7a4e"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.4.114
+Sent Disconnect-Request Id 212 from 0.0.0.0:49174 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55e4d"
+	User-Name = "7a4e"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.4.114
+(0) No reply from server for ID 212 socket 3 
+[31mERRO[0m[2024-09-11T20:26:37+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 74 from 0.0.0.0:55283 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54f5a"
+	User-Name = "zea2guz"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.47.28
+Sent Disconnect-Request Id 74 from 0.0.0.0:55283 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54f5a"
+	User-Name = "zea2guz"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.47.28
+Sent Disconnect-Request Id 74 from 0.0.0.0:55283 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54f5a"
+	User-Name = "zea2guz"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.47.28
+(0) No reply from server for ID 74 socket 3 
+[31mERRO[0m[2024-09-11T20:26:52+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 170 from 0.0.0.0:54644 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d20"
+	User-Name = "7ngtbbh"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 170 from 0.0.0.0:54644 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d20"
+	User-Name = "7ngtbbh"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 170 from 0.0.0.0:54644 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d20"
+	User-Name = "7ngtbbh"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+(0) No reply from server for ID 170 socket 3 
+[31mERRO[0m[2024-09-11T20:27:07+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 223 from 0.0.0.0:38709 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55b58"
+	User-Name = "4g85qks"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.95
+Sent Disconnect-Request Id 223 from 0.0.0.0:38709 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55b58"
+	User-Name = "4g85qks"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.95
+Sent Disconnect-Request Id 223 from 0.0.0.0:38709 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55b58"
+	User-Name = "4g85qks"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.95
+(0) No reply from server for ID 223 socket 3 
+[31mERRO[0m[2024-09-11T20:27:22+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 219 from 0.0.0.0:48487 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55d0f"
+	User-Name = "yx8um"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.75
+Sent Disconnect-Request Id 219 from 0.0.0.0:48487 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55d0f"
+	User-Name = "yx8um"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.75
+Sent Disconnect-Request Id 219 from 0.0.0.0:48487 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55d0f"
+	User-Name = "yx8um"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.75
+(0) No reply from server for ID 219 socket 3 
+[31mERRO[0m[2024-09-11T20:27:37+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 99 from 0.0.0.0:39444 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55364"
+	User-Name = "7uwqfya"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.32.215
+Sent Disconnect-Request Id 99 from 0.0.0.0:39444 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55364"
+	User-Name = "7uwqfya"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.32.215
+Sent Disconnect-Request Id 99 from 0.0.0.0:39444 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55364"
+	User-Name = "7uwqfya"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.32.215
+(0) No reply from server for ID 99 socket 3 
+[31mERRO[0m[2024-09-11T20:27:52+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 231 from 0.0.0.0:33469 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55fb3"
+	User-Name = "z6mwcut"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.153
+Sent Disconnect-Request Id 231 from 0.0.0.0:33469 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55fb3"
+	User-Name = "z6mwcut"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.153
+Sent Disconnect-Request Id 231 from 0.0.0.0:33469 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55fb3"
+	User-Name = "z6mwcut"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.153
+(0) No reply from server for ID 231 socket 3 
+[31mERRO[0m[2024-09-11T20:28:07+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 167 from 0.0.0.0:35380 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5546e"
+	User-Name = "a947d32"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.43.196
+Sent Disconnect-Request Id 167 from 0.0.0.0:35380 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5546e"
+	User-Name = "a947d32"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.43.196
+Sent Disconnect-Request Id 167 from 0.0.0.0:35380 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5546e"
+	User-Name = "a947d32"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.43.196
+(0) No reply from server for ID 167 socket 3 
+[31mERRO[0m[2024-09-11T20:28:22+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 109 from 0.0.0.0:35303 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d4a"
+	User-Name = "7b8drk6"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.42
+Sent Disconnect-Request Id 109 from 0.0.0.0:35303 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d4a"
+	User-Name = "7b8drk6"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.42
+Sent Disconnect-Request Id 109 from 0.0.0.0:35303 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d4a"
+	User-Name = "7b8drk6"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.42
+(0) No reply from server for ID 109 socket 3 
+[31mERRO[0m[2024-09-11T20:28:37+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 237 from 0.0.0.0:47103 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55b87"
+	User-Name = "x3a5mm2"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.51.116
+Sent Disconnect-Request Id 237 from 0.0.0.0:47103 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55b87"
+	User-Name = "x3a5mm2"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.51.116
+Sent Disconnect-Request Id 237 from 0.0.0.0:47103 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55b87"
+	User-Name = "x3a5mm2"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.51.116
+(0) No reply from server for ID 237 socket 3 
+[31mERRO[0m[2024-09-11T20:28:52+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 58 from 0.0.0.0:60048 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5587a"
+	User-Name = "wyyvsg5"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.71.49
+Sent Disconnect-Request Id 58 from 0.0.0.0:60048 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5587a"
+	User-Name = "wyyvsg5"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.71.49
+Sent Disconnect-Request Id 58 from 0.0.0.0:60048 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a5587a"
+	User-Name = "wyyvsg5"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.71.49
+(0) No reply from server for ID 58 socket 3 
+[36mINFO[0m[2024-09-11T20:29:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T20:29:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T20:29:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T20:29:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[31mERRO[0m[2024-09-11T20:29:20+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T20:29:35+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T20:29:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T20:30:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T20:30:20+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T20:30:35+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[31mERRO[0m[2024-09-11T20:30:51+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err:                            
+[36mINFO[0m[2024-09-11T20:31:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T20:31:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T20:31:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T20:31:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[31mERRO[0m[2024-09-11T20:31:20+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 141 from 0.0.0.0:60570 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+Sent Disconnect-Request Id 141 from 0.0.0.0:60570 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+Sent Disconnect-Request Id 141 from 0.0.0.0:60570 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+(0) No reply from server for ID 141 socket 3 
+[31mERRO[0m[2024-09-11T20:31:35+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 111 from 0.0.0.0:44605 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 111 from 0.0.0.0:44605 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 111 from 0.0.0.0:44605 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+(0) No reply from server for ID 111 socket 3 
+[31mERRO[0m[2024-09-11T20:31:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 4 from 0.0.0.0:47352 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+Sent Disconnect-Request Id 4 from 0.0.0.0:47352 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+Sent Disconnect-Request Id 4 from 0.0.0.0:47352 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+(0) No reply from server for ID 4 socket 3 
+[31mERRO[0m[2024-09-11T20:32:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 194 from 0.0.0.0:50128 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+Sent Disconnect-Request Id 194 from 0.0.0.0:50128 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+Sent Disconnect-Request Id 194 from 0.0.0.0:50128 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+(0) No reply from server for ID 194 socket 3 
+[31mERRO[0m[2024-09-11T20:32:20+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 10 from 0.0.0.0:46502 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+Sent Disconnect-Request Id 10 from 0.0.0.0:46502 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+Sent Disconnect-Request Id 10 from 0.0.0.0:46502 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+(0) No reply from server for ID 10 socket 3 
+[36mINFO[0m[2024-09-11T20:32:31+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T20:32:31+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T20:32:31+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T20:32:31+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[31mERRO[0m[2024-09-11T20:32:46+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 83 from 0.0.0.0:51256 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+Sent Disconnect-Request Id 83 from 0.0.0.0:51256 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+Sent Disconnect-Request Id 83 from 0.0.0.0:51256 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+(0) No reply from server for ID 83 socket 3 
+[31mERRO[0m[2024-09-11T20:33:01+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 251 from 0.0.0.0:40559 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 251 from 0.0.0.0:40559 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 251 from 0.0.0.0:40559 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+(0) No reply from server for ID 251 socket 3 
+[31mERRO[0m[2024-09-11T20:33:16+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 114 from 0.0.0.0:57042 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+Sent Disconnect-Request Id 114 from 0.0.0.0:57042 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+Sent Disconnect-Request Id 114 from 0.0.0.0:57042 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+(0) No reply from server for ID 114 socket 3 
+[36mINFO[0m[2024-09-11T20:33:25+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T20:33:25+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T20:33:25+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T20:33:25+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[31mERRO[0m[2024-09-11T20:33:40+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 135 from 0.0.0.0:47764 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+Sent Disconnect-Request Id 135 from 0.0.0.0:47764 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+Sent Disconnect-Request Id 135 from 0.0.0.0:47764 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+(0) No reply from server for ID 135 socket 3 
+[31mERRO[0m[2024-09-11T20:33:55+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 181 from 0.0.0.0:52269 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 181 from 0.0.0.0:52269 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 181 from 0.0.0.0:52269 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+(0) No reply from server for ID 181 socket 3 
+[31mERRO[0m[2024-09-11T20:34:10+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 130 from 0.0.0.0:43576 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+Sent Disconnect-Request Id 130 from 0.0.0.0:43576 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+Sent Disconnect-Request Id 130 from 0.0.0.0:43576 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+(0) No reply from server for ID 130 socket 3 
+[31mERRO[0m[2024-09-11T20:34:26+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 234 from 0.0.0.0:34137 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+Sent Disconnect-Request Id 234 from 0.0.0.0:34137 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+Sent Disconnect-Request Id 234 from 0.0.0.0:34137 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+(0) No reply from server for ID 234 socket 3 
+[31mERRO[0m[2024-09-11T20:34:41+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 31 from 0.0.0.0:38630 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+Sent Disconnect-Request Id 31 from 0.0.0.0:38630 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+Sent Disconnect-Request Id 31 from 0.0.0.0:38630 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+(0) No reply from server for ID 31 socket 3 
+[31mERRO[0m[2024-09-11T20:34:56+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 2 from 0.0.0.0:36291 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55d2f"
+	User-Name = "5hck"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.60.114
+Sent Disconnect-Request Id 2 from 0.0.0.0:36291 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55d2f"
+	User-Name = "5hck"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.60.114
+Sent Disconnect-Request Id 2 from 0.0.0.0:36291 to 10.0.1.246:3799 length 48
+	Acct-Session-Id = "80a55d2f"
+	User-Name = "5hck"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.60.114
+(0) No reply from server for ID 2 socket 3 
+[31mERRO[0m[2024-09-11T20:35:11+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 128 from 0.0.0.0:43146 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c77"
+	User-Name = "ygqvw8v"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.143
+Sent Disconnect-Request Id 128 from 0.0.0.0:43146 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c77"
+	User-Name = "ygqvw8v"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.143
+Sent Disconnect-Request Id 128 from 0.0.0.0:43146 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a55c77"
+	User-Name = "ygqvw8v"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.42.143
+(0) No reply from server for ID 128 socket 3 
+[31mERRO[0m[2024-09-11T20:35:26+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 75 from 0.0.0.0:57915 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55ea1"
+	User-Name = "cxrs9"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.222
+Sent Disconnect-Request Id 75 from 0.0.0.0:57915 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55ea1"
+	User-Name = "cxrs9"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.222
+Sent Disconnect-Request Id 75 from 0.0.0.0:57915 to 10.0.1.246:3799 length 49
+	Acct-Session-Id = "80a55ea1"
+	User-Name = "cxrs9"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.222
+(0) No reply from server for ID 75 socket 3 
+[31mERRO[0m[2024-09-11T20:35:41+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 12 from 0.0.0.0:36847 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54a1c"
+	User-Name = "huwv2ab"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.167
+Sent Disconnect-Request Id 12 from 0.0.0.0:36847 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54a1c"
+	User-Name = "huwv2ab"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.167
+Sent Disconnect-Request Id 12 from 0.0.0.0:36847 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54a1c"
+	User-Name = "huwv2ab"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.46.167
+(0) No reply from server for ID 12 socket 3 
+[31mERRO[0m[2024-09-11T20:35:56+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 123 from 0.0.0.0:39769 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54d3d"
+	User-Name = "dyrb3z3"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.31
+Sent Disconnect-Request Id 123 from 0.0.0.0:39769 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54d3d"
+	User-Name = "dyrb3z3"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.31
+Sent Disconnect-Request Id 123 from 0.0.0.0:39769 to 10.0.1.246:3799 length 51
+	Acct-Session-Id = "80a54d3d"
+	User-Name = "dyrb3z3"
+	NAS-IP-Address = 10.0.1.246
+	Framed-IP-Address = 172.16.7.31
+(0) No reply from server for ID 123 socket 3 
+[36mINFO[0m[2024-09-11T20:36:15+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T20:36:15+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T20:36:15+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T20:36:15+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[31mERRO[0m[2024-09-11T20:36:30+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 242 from 0.0.0.0:54838 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+Sent Disconnect-Request Id 242 from 0.0.0.0:54838 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+Sent Disconnect-Request Id 242 from 0.0.0.0:54838 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+(0) No reply from server for ID 242 socket 3 
+[31mERRO[0m[2024-09-11T20:36:45+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 115 from 0.0.0.0:45956 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 115 from 0.0.0.0:45956 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 115 from 0.0.0.0:45956 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+(0) No reply from server for ID 115 socket 3 
+[31mERRO[0m[2024-09-11T20:37:00+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 1 from 0.0.0.0:48166 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+Sent Disconnect-Request Id 1 from 0.0.0.0:48166 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+Sent Disconnect-Request Id 1 from 0.0.0.0:48166 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+(0) No reply from server for ID 1 socket 3 
+[31mERRO[0m[2024-09-11T20:37:15+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 138 from 0.0.0.0:39798 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+Sent Disconnect-Request Id 138 from 0.0.0.0:39798 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+Sent Disconnect-Request Id 138 from 0.0.0.0:39798 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+(0) No reply from server for ID 138 socket 3 
+[36mINFO[0m[2024-09-11T20:37:20+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T20:37:20+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T20:37:20+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T20:37:20+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[31mERRO[0m[2024-09-11T20:37:35+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 222 from 0.0.0.0:39078 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+Sent Disconnect-Request Id 222 from 0.0.0.0:39078 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+Sent Disconnect-Request Id 222 from 0.0.0.0:39078 to 10.0.1.245:3799 length 49
+	Acct-Session-Id = "802010c9"
+	User-Name = "a86cs"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.0.4
+(0) No reply from server for ID 222 socket 3 
+[31mERRO[0m[2024-09-11T20:37:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 122 from 0.0.0.0:49487 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 122 from 0.0.0.0:49487 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+Sent Disconnect-Request Id 122 from 0.0.0.0:49487 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "8020172e"
+	User-Name = "c4e4ph9"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.185
+(0) No reply from server for ID 122 socket 3 
+[31mERRO[0m[2024-09-11T20:38:05+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 128 from 0.0.0.0:44204 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+Sent Disconnect-Request Id 128 from 0.0.0.0:44204 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+Sent Disconnect-Request Id 128 from 0.0.0.0:44204 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201baa"
+	User-Name = "bzydkx7"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.177
+(0) No reply from server for ID 128 socket 3 
+[31mERRO[0m[2024-09-11T20:38:20+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 132 from 0.0.0.0:38419 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+Sent Disconnect-Request Id 132 from 0.0.0.0:38419 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+Sent Disconnect-Request Id 132 from 0.0.0.0:38419 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d66"
+	User-Name = "74d77pp"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.6.74
+(0) No reply from server for ID 132 socket 3 
+[31mERRO[0m[2024-09-11T20:38:35+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log() exec command err: Sent Disconnect-Request Id 1 from 0.0.0.0:34116 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+Sent Disconnect-Request Id 1 from 0.0.0.0:34116 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+Sent Disconnect-Request Id 1 from 0.0.0.0:34116 to 10.0.1.245:3799 length 51
+	Acct-Session-Id = "80201d6e"
+	User-Name = "fz5wsgq"
+	NAS-IP-Address = 10.0.1.245
+	Framed-IP-Address = 10.100.2.183
+(0) No reply from server for ID 1 socket 3 
+[36mINFO[0m[2024-09-11T20:38:49+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T20:38:49+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T20:38:49+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T20:38:49+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[36mINFO[0m[2024-09-11T20:39:38+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T20:39:38+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T20:39:38+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T20:39:38+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[36mINFO[0m[2024-09-11T20:47:54+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() time to sleep                                
+[36mINFO[0m[2024-09-11T20:49:54+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T20:52:29+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T20:52:29+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T20:52:29+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T20:52:29+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[36mINFO[0m[2024-09-11T21:00:45+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() time to sleep                                
+[36mINFO[0m[2024-09-11T21:02:45+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T21:13:02+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() time to sleep                                
+[36mINFO[0m[2024-09-11T21:15:02+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T21:25:19+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() time to sleep                                
+[36mINFO[0m[2024-09-11T21:27:19+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[31mERRO[0m[2024-09-11T21:29:02+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/logger.go:192 github.com/sirupsen/logrus.(*Logger).Log()                                              
+[36mINFO[0m[2024-09-11T21:37:36+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() time to sleep                                
+[36mINFO[0m[2024-09-11T21:39:36+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T21:49:52+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() time to sleep                                
+[36mINFO[0m[2024-09-11T21:51:52+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T22:02:09+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() time to sleep                                
+[36mINFO[0m[2024-09-11T22:04:09+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T22:10:57+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T22:10:57+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T22:10:57+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T22:10:57+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[36mINFO[0m[2024-09-11T22:21:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T22:21:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T22:21:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T22:21:50+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[36mINFO[0m[2024-09-11T22:26:08+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T22:26:08+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T22:26:08+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T22:26:08+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[36mINFO[0m[2024-09-11T22:32:25+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T22:32:25+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T22:32:25+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T22:32:25+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[36mINFO[0m[2024-09-11T22:34:43+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T22:34:43+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T22:34:43+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T22:34:43+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              
+[36mINFO[0m[2024-09-11T22:36:07+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for two minute                     
+[36mINFO[0m[2024-09-11T22:36:07+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() start job for one day                        
+[36mINFO[0m[2024-09-11T22:36:07+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() two week increase Perform clear              
+[36mINFO[0m[2024-09-11T22:36:07+08:00]/home/andreas/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:359 github.com/sirupsen/logrus.(*Entry).Logln() job one day done, time to sleep              

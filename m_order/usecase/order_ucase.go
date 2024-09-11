@@ -3,6 +3,7 @@ package usecase
 import (
 	"context"
 	"errors"
+	"fmt"
 	"math"
 	"math/rand"
 	"slices"
@@ -226,6 +227,10 @@ func (uc *orderUsecase) Client(ctx context.Context, request *domain.OrderClientR
 		if err != nil {
 			logrus.Error(err)
 		}
+
+		for _, rs := range resoc {
+			fmt.Println("resoc.expire", rs.Expire)
+		}
 		now, err = time.ParseInLocation(layoutFormat, resoc[0].Expire, wita)
 		if err != nil {
 			logrus.Error(err)
@@ -304,90 +309,174 @@ func (uc *orderUsecase) Client(ctx context.Context, request *domain.OrderClientR
 						Type:       "bypassed",
 					})
 				}
-			}
 
-			resultFirewall, err := uc.RFirewall.First(&domain.Firewall{SrcMacAddress: macAddress})
-			if err != nil {
-				logrus.Error(err)
-				return err
-			}
-
-			if resultFirewall != (domain.Firewall{}) {
-				resultFirewall.Comment = now.Format(layoutFormat)
-				resultFirewall.NewConnectionMark = connectionName
-				err = uc.RFirewall.Update(&resultFirewall)
+				resultFirewall, err := uc.RFirewall.Firsts(ros.Client, &domain.Firewall{SrcMacAddress: macAddress})
 				if err != nil {
 					logrus.Error(err)
 					return err
 				}
-			} else {
-				uc.RFirewall.Save(&domain.Firewall{
-					Chain:             "prerouting",
-					Action:            "mark-connection",
-					NewConnectionMark: connectionName,
-					Passthrough:       "yes",
-					SrcMacAddress:     macAddress,
-					Comment:           now.Format(layoutFormat),
-				})
-			}
 
-			resultFirewallPacket, err := uc.RFirewall.First(&domain.Firewall{ConnectionMark: connectionName})
-			if err != nil {
-				logrus.Error(err)
-				return err
-			}
+				if resultFirewall != (domain.Firewall{}) {
+					resultFirewall.Comment = now.Format(layoutFormat)
+					resultFirewall.NewConnectionMark = connectionName
+					err = uc.RFirewall.Updates(ros.Client, &resultFirewall)
+					if err != nil {
+						logrus.Error(err)
+						return err
+					}
+				} else {
+					uc.RFirewall.Saves(ros.Client, &domain.Firewall{
+						Chain:             "prerouting",
+						Action:            "mark-connection",
+						NewConnectionMark: connectionName,
+						Passthrough:       "yes",
+						SrcMacAddress:     macAddress,
+						Comment:           now.Format(layoutFormat),
+					})
+				}
 
-			if resultFirewallPacket != (domain.Firewall{}) {
-				resultFirewallPacket.NewPacketMark = packetName
-				resultFirewallPacket.Comment = now.Format(layoutFormat)
-				err = uc.RFirewall.Update(&resultFirewallPacket)
+				resultFirewallPacket, err := uc.RFirewall.Firsts(ros.Client, &domain.Firewall{ConnectionMark: connectionName})
 				if err != nil {
 					logrus.Error(err)
 					return err
 				}
-			} else {
-				err = uc.RFirewall.Save(&domain.Firewall{
-					Chain:          "prerouting",
-					Action:         "mark-packet",
-					ConnectionMark: connectionName,
-					Passthrough:    "no",
-					NewPacketMark:  packetName,
-					Comment:        now.Format(layoutFormat),
-				})
 
+				if resultFirewallPacket != (domain.Firewall{}) {
+					resultFirewallPacket.NewPacketMark = packetName
+					resultFirewallPacket.Comment = now.Format(layoutFormat)
+					err = uc.RFirewall.Updates(ros.Client, &resultFirewallPacket)
+					if err != nil {
+						logrus.Error(err)
+						return err
+					}
+				} else {
+					err = uc.RFirewall.Saves(ros.Client, &domain.Firewall{
+						Chain:          "prerouting",
+						Action:         "mark-packet",
+						ConnectionMark: connectionName,
+						Passthrough:    "no",
+						NewPacketMark:  packetName,
+						Comment:        now.Format(layoutFormat),
+					})
+
+					if err != nil {
+						logrus.Error(err)
+						return err
+					}
+				}
+
+				resultSimpleQueue, err := uc.RSimpleQueue.Firsts(ros.Client, &domain.SimpleQueue{Name: packetName})
 				if err != nil {
 					logrus.Error(err)
 					return err
 				}
+
+				if resultSimpleQueue != (domain.SimpleQueue{}) {
+					resultSimpleQueue.MaxLimit = client.Speed
+					resultSimpleQueue.PacketMarks = packetName
+					resultSimpleQueue.Target = "10.0.0.0/8,172.16.0.0/12,192.168.0.0/16"
+					err = uc.RSimpleQueue.Updates(ros.Client, &resultSimpleQueue)
+					if err != nil {
+						logrus.Error(err)
+						return err
+					}
+				} else {
+					err = uc.RSimpleQueue.Saves(ros.Client, &domain.SimpleQueue{
+						Name:        packetName,
+						PacketMarks: packetName,
+						MaxLimit:    client.Speed,
+						Target:      "10.0.0.0/8,172.16.0.0/12,192.168.0.0/16",
+					})
+					if err != nil {
+						logrus.Error(err)
+						return err
+					}
+				}
+
 			}
 
-			resultSimpleQueue, err := uc.RSimpleQueue.First(&domain.SimpleQueue{Name: packetName})
-			if err != nil {
-				logrus.Error(err)
-				return err
-			}
+			// resultFirewall, err := uc.RFirewall.First(&domain.Firewall{SrcMacAddress: macAddress})
+			// if err != nil {
+			// 	logrus.Error(err)
+			// 	return err
+			// }
 
-			if resultSimpleQueue != (domain.SimpleQueue{}) {
-				resultSimpleQueue.MaxLimit = client.Speed
-				resultSimpleQueue.PacketMarks = packetName
-				resultSimpleQueue.Target = "10.0.0.0/8,172.16.0.0/12,192.168.0.0/16"
-				err = uc.RSimpleQueue.Update(&resultSimpleQueue)
-				if err != nil {
-					logrus.Error(err)
-					return err
-				}
-			} else {
-				err = uc.RSimpleQueue.Save(&domain.SimpleQueue{
-					Name:        packetName,
-					PacketMarks: packetName,
-					MaxLimit:    client.Speed,
-					Target:      "10.0.0.0/8,172.16.0.0/12,192.168.0.0/16",
-				})
-				if err != nil {
-					logrus.Error(err)
-					return err
-				}
-			}
+			// if resultFirewall != (domain.Firewall{}) {
+			// 	resultFirewall.Comment = now.Format(layoutFormat)
+			// 	resultFirewall.NewConnectionMark = connectionName
+			// 	err = uc.RFirewall.Update(&resultFirewall)
+			// 	if err != nil {
+			// 		logrus.Error(err)
+			// 		return err
+			// 	}
+			// } else {
+			// 	uc.RFirewall.Save(&domain.Firewall{
+			// 		Chain:             "prerouting",
+			// 		Action:            "mark-connection",
+			// 		NewConnectionMark: connectionName,
+			// 		Passthrough:       "yes",
+			// 		SrcMacAddress:     macAddress,
+			// 		Comment:           now.Format(layoutFormat),
+			// 	})
+			// }
+
+			// resultFirewallPacket, err := uc.RFirewall.First(&domain.Firewall{ConnectionMark: connectionName})
+			// if err != nil {
+			// 	logrus.Error(err)
+			// 	return err
+			// }
+
+			// if resultFirewallPacket != (domain.Firewall{}) {
+			// 	resultFirewallPacket.NewPacketMark = packetName
+			// 	resultFirewallPacket.Comment = now.Format(layoutFormat)
+			// 	err = uc.RFirewall.Update(&resultFirewallPacket)
+			// 	if err != nil {
+			// 		logrus.Error(err)
+			// 		return err
+			// 	}
+			// } else {
+			// 	err = uc.RFirewall.Save(&domain.Firewall{
+			// 		Chain:          "prerouting",
+			// 		Action:         "mark-packet",
+			// 		ConnectionMark: connectionName,
+			// 		Passthrough:    "no",
+			// 		NewPacketMark:  packetName,
+			// 		Comment:        now.Format(layoutFormat),
+			// 	})
+
+			// 	if err != nil {
+			// 		logrus.Error(err)
+			// 		return err
+			// 	}
+			// }
+
+			// resultSimpleQueue, err := uc.RSimpleQueue.First(&domain.SimpleQueue{Name: packetName})
+			// if err != nil {
+			// 	logrus.Error(err)
+			// 	return err
+			// }
+
+			// if resultSimpleQueue != (domain.SimpleQueue{}) {
+			// 	resultSimpleQueue.MaxLimit = client.Speed
+			// 	resultSimpleQueue.PacketMarks = packetName
+			// 	resultSimpleQueue.Target = "10.0.0.0/8,172.16.0.0/12,192.168.0.0/16"
+			// 	err = uc.RSimpleQueue.Update(&resultSimpleQueue)
+			// 	if err != nil {
+			// 		logrus.Error(err)
+			// 		return err
+			// 	}
+			// } else {
+			// 	err = uc.RSimpleQueue.Save(&domain.SimpleQueue{
+			// 		Name:        packetName,
+			// 		PacketMarks: packetName,
+			// 		MaxLimit:    client.Speed,
+			// 		Target:      "10.0.0.0/8,172.16.0.0/12,192.168.0.0/16",
+			// 	})
+			// 	if err != nil {
+			// 		logrus.Error(err)
+			// 		return err
+			// 	}
+			// }
 
 			if total == int(client.Session) {
 				break

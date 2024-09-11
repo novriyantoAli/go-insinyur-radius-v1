@@ -27,7 +27,7 @@ func (m *mysqlRepository) FindOrderClientExpire(ctx context.Context) (res []doma
 }
 
 func (m *mysqlRepository) FindOrderClient(ctx context.Context, oc *domain.OrderClient) (res []domain.OrderClient, err error) {
-	err = m.Conn.Model(domain.OrderClient{}).Preload("Client").Preload("Client.ClientBinding").Where(`STR_TO_DATE(expire, "%d %b %Y") >= CURDATE() AND id_client = ?`, oc.IDClient).Order("expire desc").Find(&res).Error
+	err = m.Conn.Model(domain.OrderClient{}).Preload("Client").Preload("Client.ClientBinding").Where(`STR_TO_DATE(expire, "%d %b %Y") >= CURDATE() AND id_client = ?`, oc.IDClient).Order("expire asc").Find(&res).Error
 	return
 }
 

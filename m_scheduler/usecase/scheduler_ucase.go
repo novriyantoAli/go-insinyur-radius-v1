@@ -3,6 +3,7 @@ package usecase
 import (
 	"bytes"
 	"context"
+	"fmt"
 	"math"
 	"os/exec"
 	"strings"
@@ -99,10 +100,23 @@ func (uc *schedulerUsecase) IncreasePerform(c context.Context, wita *time.Locati
 		if math.Signbit(duration.Seconds()) == false {
 			for _, radacct := range resacct {
 				if radcheck.Username == radacct.Username {
-					cmd := exec.Command("sh", "-c", `echo "Acct-Session-Id=`+radacct.Acctsessionid+`,User-Name=`+radacct.Username+`,NAS-IP-Address=`+radacct.Nasipaddress+`,Framed-IP-Address=`+radacct.Framedipaddress+`" | radclient -x `+radacct.Nasipaddress+`:3799 disconnect '`+radacct.Nas.Secret+`'`)
+					command := `echo "Acct-Session-Id=` + radacct.Acctsessionid + `,User-Name=` + radacct.Username + `,NAS-IP-Address=` + radacct.Nasipaddress + `,Framed-IP-Address=` + radacct.Framedipaddress + `" | radclient -x ` + radacct.Nasipaddress + `:3799 disconnect '` + radacct.Nas.Secret + `'`
+					cmd := exec.Command("sh", "-c", command)
+					var out bytes.Buffer
+					var stderr bytes.Buffer
+					cmd.Stdout = &out
+					cmd.Stderr = &stderr
 					err := cmd.Run()
 					if err != nil {
-						logrus.Error(err)
+						x := out.String()
+						x = strings.ToLower(x)
+						fmt.Println(x)
+						// if strings.Contains(x, "no reply from server for id") {
+						// 	fmt.Println("command: ", command)
+						// }
+						// logrus.Error("exec command err: ", out.String())
+					} else {
+						logrus.Infoln(out.String())
 					}
 				}
 			}
@@ -155,14 +169,25 @@ func (uc *schedulerUsecase) GuardRadius(c context.Context, wita *time.Location) 
 		if math.Signbit(duration.Seconds()) == false {
 			for _, radacct := range resacct {
 				if radcheck.Username == radacct.Username {
-					cmd := exec.Command("sh", "-c", `echo "Acct-Session-Id=`+radacct.Acctsessionid+`,User-Name=`+radacct.Username+`,NAS-IP-Address=`+radacct.Nasipaddress+`,Framed-IP-Address=`+radacct.Framedipaddress+`" | radclient -x `+radacct.Nasipaddress+`:3799 disconnect '`+radacct.Nas.Secret+`'`)
+					command := `echo "Acct-Session-Id=` + radacct.Acctsessionid + `,User-Name=` + radacct.Username + `,NAS-IP-Address=` + radacct.Nasipaddress + `,Framed-IP-Address=` + radacct.Framedipaddress + `" | radclient -x ` + radacct.Nasipaddress + `:3799 disconnect '` + radacct.Nas.Secret + `'`
+					cmd := exec.Command("sh", "-c", command)
 					var out bytes.Buffer
 					var stderr bytes.Buffer
 					cmd.Stdout = &out
 					cmd.Stderr = &stderr
 					err := cmd.Run()
 					if err != nil {
-						logrus.Error("exec command err: ", stderr.String())
+						x := out.String()
+						x = strings.ToLower(x)
+						if strings.Contains(x, "no reply from server for ids") {
+							fmt.Println("command: ", command)
+						}
+						// logrus.Error("exec command err: ", out.String())
+
+						// if strings.HasPrefix(out.String(), "(0) No reply from server for ID") {
+						// 	fmt.Println("command: ", command)
+						// }
+						// logrus.Error("exec command err: ", out.String())
 					} else {
 						logrus.Infoln(out.String())
 					}
@@ -204,39 +229,71 @@ func (uc *schedulerUsecase) GuardMacBinding(c context.Context, wita *time.Locati
 					if err != nil {
 						logrus.Error(err)
 					}
+
+					firewallConn, err := uc.RFirewall.Firsts(value.Client, &domain.Firewall{SrcMacAddress: macAddress})
+					if err != nil {
+						logrus.Error(err)
+					}
+
+					firewallPack, err := uc.RFirewall.Firsts(value.Client, &domain.Firewall{ConnectionMark: firewallConn.NewConnectionMark})
+					if err != nil {
+						logrus.Error(err)
+					}
+
+					// delete queue
+					simplequeue, err := uc.RSimpleQueue.Firsts(value.Client, &domain.SimpleQueue{Name: firewallPack.NewPacketMark})
+					if err != nil {
+						logrus.Error(err)
+					}
+
+					err = uc.RFirewall.Deletes(value.Client, &firewallConn)
+					if err != nil {
+						logrus.Error(err)
+					}
+
+					err = uc.RFirewall.Deletes(value.Client, &firewallPack)
+					if err != nil {
+						logrus.Error(err)
+					}
+
+					err = uc.RSimpleQueue.Deletes(value.Client, &simplequeue)
+					if err != nil {
+						logrus.Error(err)
+					}
+
 				}
 
 				// delete firewall
-				firewallConn, err := uc.RFirewall.First(&domain.Firewall{SrcMacAddress: macAddress})
-				if err != nil {
-					logrus.Error(err)
-				}
+				// firewallConn, err := uc.RFirewall.First(&domain.Firewall{SrcMacAddress: macAddress})
+				// if err != nil {
+				// 	logrus.Error(err)
+				// }
 
-				firewallPack, err := uc.RFirewall.First(&domain.Firewall{ConnectionMark: firewallConn.NewConnectionMark})
-				if err != nil {
-					logrus.Error(err)
-				}
+				// firewallPack, err := uc.RFirewall.First(&domain.Firewall{ConnectionMark: firewallConn.NewConnectionMark})
+				// if err != nil {
+				// 	logrus.Error(err)
+				// }
 
-				// delete queue
-				simplequeue, err := uc.RSimpleQueue.First(&domain.SimpleQueue{Name: firewallPack.NewPacketMark})
-				if err != nil {
-					logrus.Error(err)
-				}
+				// // delete queue
+				// simplequeue, err := uc.RSimpleQueue.First(&domain.SimpleQueue{Name: firewallPack.NewPacketMark})
+				// if err != nil {
+				// 	logrus.Error(err)
+				// }
 
-				err = uc.RFirewall.Delete(&firewallConn)
-				if err != nil {
-					logrus.Error(err)
-				}
+				// err = uc.RFirewall.Delete(&firewallConn)
+				// if err != nil {
+				// 	logrus.Error(err)
+				// }
 
-				err = uc.RFirewall.Delete(&firewallPack)
-				if err != nil {
-					logrus.Error(err)
-				}
+				// err = uc.RFirewall.Delete(&firewallPack)
+				// if err != nil {
+				// 	logrus.Error(err)
+				// }
 
-				err = uc.RSimpleQueue.Delete(&simplequeue)
-				if err != nil {
-					logrus.Error(err)
-				}
+				// err = uc.RSimpleQueue.Delete(&simplequeue)
+				// if err != nil {
+				// 	logrus.Error(err)
+				// }
 			}
 		}
 	}
