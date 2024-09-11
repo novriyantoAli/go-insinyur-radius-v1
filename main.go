@@ -1,45 +1,83 @@
 package main
 
 import (
-	"database/sql"
-	"fmt"
 	"io"
 	"log"
-	"net/url"
 	"os"
 	"time"
 
-	"github.com/labstack/echo"
-	"github.com/labstack/echo/middleware"
-	"github.com/rs/cors"
+	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
-	"gopkg.in/go-playground/validator.v9"
 
-	_ "github.com/go-sql-driver/mysql"
+	// "gopkg.in/go-playground/validator.v9"
+	"github.com/go-playground/validator/v10"
 
-	_usersHandler "github.com/novriyantoAli/go-insinyur-radius-v1/users/delivery/http"
-	_usersRepository "github.com/novriyantoAli/go-insinyur-radius-v1/users/repository/mysql"
-	_usersUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/users/usecase"
+	"github.com/novriyantoAli/go-insinyur-radius-v1/initializers"
 
-	_resellerHandler "github.com/novriyantoAli/go-insinyur-radius-v1/reseller/delivery/http"
-	_resellerRepository "github.com/novriyantoAli/go-insinyur-radius-v1/reseller/repository/mysql"
-	_resellerUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/reseller/usecase"
+	_usersHandler "github.com/novriyantoAli/go-insinyur-radius-v1/m_users/delivery/http"
+	_usersRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_users/repository/mysql"
+	_usersUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/m_users/usecase"
 
-	_transactionHandler "github.com/novriyantoAli/go-insinyur-radius-v1/transaction/delivery/http"
-	_transactionRepository "github.com/novriyantoAli/go-insinyur-radius-v1/transaction/repository/mysql"
-	_transactionUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/transaction/usecase"
+	_radcheckRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_radcheck/repository/mysql"
 
-	_radcheckRepository "github.com/novriyantoAli/go-insinyur-radius-v1/radcheck/repository/mysql"
+	_radreplyRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_radreply/repository/mysql"
 
-	_packageHandler "github.com/novriyantoAli/go-insinyur-radius-v1/package/delivery/http"
-	_packageRepository "github.com/novriyantoAli/go-insinyur-radius-v1/package/repository/mysql"
-	_packageUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/package/usecase"
+	_packageHandler "github.com/novriyantoAli/go-insinyur-radius-v1/m_package/delivery/http"
+	_packageRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_package/repository/mysql"
+	_packageUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/m_package/usecase"
 
-	_schedulerHandler "github.com/novriyantoAli/go-insinyur-radius-v1/scheduler/delivery/udp"
-	_schedulerUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/scheduler/usecase"
+	_radacctRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_radacct/repository/mysql"
 
-	_radacctRepository "github.com/novriyantoAli/go-insinyur-radius-v1/radacct/repository/mysql"
+	_profilesHandler "github.com/novriyantoAli/go-insinyur-radius-v1/m_profiles/delivery/http"
+	_profilesRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_profiles/repository/mysql"
+	_profilesUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/m_profiles/usecase"
+
+	_vouchersHandler "github.com/novriyantoAli/go-insinyur-radius-v1/m_vouchers/delivery/http"
+	_vouchersRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_vouchers/repository/mysql"
+	_vouchersUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/m_vouchers/usecase"
+
+	_clientsHandler "github.com/novriyantoAli/go-insinyur-radius-v1/m_clients/delivery/http"
+	_clientsRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_clients/repository/mysql"
+	_clientsUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/m_clients/usecase"
+
+	_orderHandler "github.com/novriyantoAli/go-insinyur-radius-v1/m_order/delivery/http"
+	_orderRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_order/repository/mysql"
+	_orderUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/m_order/usecase"
+
+	_customerHandler "github.com/novriyantoAli/go-insinyur-radius-v1/m_customer/delivery/http"
+	_customerRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_customer/repository/mysql"
+	_customerUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/m_customer/usecase"
+
+	_vcrRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_vouchers/repository/mysql"
+
+	_radgroupHandler "github.com/novriyantoAli/go-insinyur-radius-v1/m_radgroup/delivery/http"
+	_radgroupRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_radgroup/repository/mysql"
+	_radgroupUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/m_radgroup/usecase"
+
+	_firewallRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_firewall/repository/ros"
+	_ipbindingRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_ipbinding/repository/ros"
+	_simpleQueueRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_simplequeue/repository/ros"
+
+	_schedulerHandler "github.com/novriyantoAli/go-insinyur-radius-v1/m_scheduler/delivery/udp"
+	_schedulerUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/m_scheduler/usecase"
+
+	_paymentHandler "github.com/novriyantoAli/go-insinyur-radius-v1/m_payment/delivery/http"
+	_paymentRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_payment/repository/mysql"
+	_paymentUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/m_payment/usecase"
+
+	_dashboardHandler "github.com/novriyantoAli/go-insinyur-radius-v1/m_dashboard/delivery/http"
+	_dashboardUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/m_dashboard/usecase"
+
+	_timelineRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_timeline/repository/mysql"
+
+	_messageHandler "github.com/novriyantoAli/go-insinyur-radius-v1/m_message/delivery/mbroker"
+	_messageUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/m_message/usecase"
+
+	_nasHandler "github.com/novriyantoAli/go-insinyur-radius-v1/m_nas/delivery/http"
+	_nasRepository "github.com/novriyantoAli/go-insinyur-radius-v1/m_nas/repository/mysql"
+	_nasUsecase "github.com/novriyantoAli/go-insinyur-radius-v1/m_nas/usecase"
 )
 
 type responseError struct {
@@ -60,34 +98,33 @@ func init() {
 	})
 
 	logrus.SetReportCaller(true)
-	viper.SetConfigName("config")    // name of config file (without extension)
-	viper.SetConfigType("yaml")      // REQUIRED if the config file does not have the extension in the name
-	viper.AddConfigPath("/etc/ir/")  // path to look for the config file in
-	viper.AddConfigPath("$HOME/.ir") // call multiple times to add many search paths
-	viper.AddConfigPath(".")         // optionally look for config in the working directory
-	err := viper.ReadInConfig()      // Find and read the config file
-	if err != nil {                  // Handle errors reading the config file
-		panic(fmt.Errorf("Fatal error config file: %s \n", err))
-	}
 
-	if viper.GetBool(`debug`) {
-		logrus.Infoln("SERVICE RUN IN DEBUG MODE")
-	}
+	// meload config dengan viper
+	initializers.LoadConfig()
+	// mengkoneksikan ke database
+	initializers.ConnectDB()
+	// load library casbin
+	// initializers.LoadAAA(initializers.GORM)
+	// migrasi database
+	initializers.Migrations()
+	// koneksi ke mikrotik
+	initializers.ConnectROS()
+	// koneksi ke redis
+	initializers.ConnectRedis()
 
-	// batas
-	dbConn := createDB()
 	triggerName := viper.GetString(`administrator.triggerName`)
 	// create all event after insert
-	_, err = dbConn.Exec(`
-	CREATE TRIGGER ` + triggerName + ` AFTER INSERT ON radacct FOR EACH ROW 
-		
+	_ = initializers.GORM.Exec(`
+	CREATE TRIGGER ` + triggerName + ` AFTER INSERT ON radacct FOR EACH ROW
+
 	BEGIN
-		
-	SET @expiration = (SELECT COUNT(*) FROM radcheck WHERE username = New.username AND attribute = 'Expiration'); 
-		
+
+	SET @expiration = (SELECT COUNT(*) FROM radcheck WHERE username = New.username AND attribute = 'Expiration');
+
 	IF (@expiration = 0) THEN
-		SET @validity_value = (SELECT package.validity_value FROM radpackage INNER JOIN package ON package.id = radpackage.id_package WHERE radpackage.username = New.username ORDER BY radpackage.id DESC LIMIT 1);
-		SET @validity_unit = (SELECT package.validity_unit FROM radpackage INNER JOIN package ON package.id = radpackage.id_package WHERE radpackage.username = New.username ORDER BY radpackage.id DESC LIMIT 1);
+		SET @validity_value = (SELECT pkgs.validity_value FROM vcrs INNER JOIN pkgs ON pkgs.id = vcrs.pkg WHERE vcrs.username = New.username ORDER BY vcrs.id DESC LIMIT 1);
+		SET @validity_value = (SELECT pkgs.validity_value FROM vcrs INNER JOIN pkgs ON pkgs.id = vcrs.pkg WHERE vcrs.username = New.username ORDER BY vcrs.id DESC LIMIT 1);
+		SET @validity_unit = (SELECT pkgs.validity_unit FROM vcrs INNER JOIN pkgs ON pkgs.id = vcrs.pkg WHERE vcrs.username = New.username ORDER BY vcrs.id DESC LIMIT 1);
 
 		IF (@validity_unit = 'HOUR') THEN
 			INSERT INTO radcheck(username, attribute, op, value) VALUES(New.username, "Expiration", ":=", DATE_FORMAT((NOW() + INTERVAL @validity_value HOUR), "%d %b %Y %H:%I:%S"));
@@ -105,40 +142,10 @@ func init() {
 
 	END IF;
 	END;`)
-
-	if err != nil {
-		logrus.Error(err)
-	}
-
-	dbConn.Close()
 }
 
-func createDB() *sql.DB {
-	// set radacct to check if user logged in
-	dbHost := viper.GetString(`database.host`)
-	dbPort := viper.GetString(`database.port`)
-	dbUser := viper.GetString(`database.user`)
-	dbPass := viper.GetString(`database.pass`)
-	dbName := viper.GetString(`database.name`)
-
-	connection := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", dbUser, dbPass, dbHost, dbPort, dbName)
-	val := url.Values{}
-	val.Add(`parseTime`, "1")
-	val.Add(`loc`, "Asia/Makassar")
-
-	dsn := fmt.Sprintf("%s?%s", connection, val.Encode())
-
-	dbConn, err := sql.Open(`mysql`, dsn)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	err = dbConn.Ping()
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	return dbConn
+type User struct {
+	Username string `json:"username"`
 }
 
 func main() {
@@ -154,49 +161,11 @@ func main() {
 
 	logrus.SetOutput(wrt)
 
-	// database initialize
-	dbHost := viper.GetString(`database.host`)
-	dbPort := viper.GetString(`database.port`)
-	dbUser := viper.GetString(`database.user`)
-	dbPass := viper.GetString(`database.pass`)
-	dbName := viper.GetString(`database.name`)
-
-	connection := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", dbUser, dbPass, dbHost, dbPort, dbName)
-	val := url.Values{}
-	val.Add(`parseTime`, "1")
-	val.Add(`loc`, "Asia/Makassar")
-
-	dsn := fmt.Sprintf("%s?%s", connection, val.Encode())
-
-	dbConn, err := sql.Open(`mysql`, dsn)
-	if err != nil {
-		logrus.Fatalln(err)
-		// log.Fatal(err)
-	}
-
-	err = dbConn.Ping()
-	if err != nil {
-		logrus.Fatalln(err)
-		// log.Fatal(err)
-	}
-
-	defer func() {
-		err := dbConn.Close()
-		if err != nil {
-			logrus.Fatalln(err)
-			// log.Fatal(err)
-		}
-	}()
-
 	e := echo.New()
 
-	corsMiddleware := cors.New(cors.Options{
-		AllowedOrigins: []string{"*"},
-		AllowedMethods: []string{"OPTIONS", "GET", "POST", "PUT", "DELETE"},
-		AllowedHeaders: []string{"Content-Type", "X-CSRF-Token", "application/json"},
-		Debug:          true,
-	})
-	e.Use(echo.WrapMiddleware(corsMiddleware.Handler))
+	e.Static("/public/upload/img", "public/upload/img")
+
+	e.Use(middleware.CORS())
 
 	e.Use(middleware.LoggerWithConfig(middleware.LoggerConfig{
 		Format: "method=${method}, uri=${uri}, status=${status}\n",
@@ -208,29 +177,85 @@ func main() {
 	/**
 	 * Defined Application Repository
 	 */
-	usersRepository := _usersRepository.NewMysqlRepository(dbConn)
-	resellerRepository := _resellerRepository.NewMysqlRepository(dbConn)
-	transactionRepository := _transactionRepository.NewMysqlRepository(dbConn)
-	radcheckRepository := _radcheckRepository.NewMysqlRepository(dbConn)
-	packageRepository := _packageRepository.NewMysqlRepository(dbConn)
-	radacctRepository := _radacctRepository.NewMysqlRepository(dbConn)
-
+	usersRepository := _usersRepository.NewMysqlRepository(initializers.DB, initializers.GORM)
+	radcheckRepository := _radcheckRepository.NewMysqlRepository(initializers.DB, initializers.GORM)
+	radreplyRepository := _radreplyRepository.NewMysqlRepository(initializers.GORM)
+	packageRepository := _packageRepository.NewMysqlRepository(initializers.DB, initializers.GORM)
+	radacctRepository := _radacctRepository.NewMysqlRepository(initializers.DB, initializers.GORM)
+	profilesRepository := _profilesRepository.NewMysqlRepository(initializers.GORM)
+	vouchersRepository := _vouchersRepository.NewMysqlRepository(initializers.GORM)
+	clientsRepository := _clientsRepository.NewMysqlRepository(initializers.GORM)
+	orderRepository := _orderRepository.NewMysqlRepository(initializers.GORM)
+	customerRepository := _customerRepository.NewMysqlRepository(initializers.GORM)
+	vcrRepository := _vcrRepository.NewMysqlRepository(initializers.GORM)
+	radgroupRepository := _radgroupRepository.NewMysqlRepository(initializers.GORM)
+	paymentRepo := _paymentRepository.NewMysqlRepository(initializers.GORM)
+	ipbindingRepository := _ipbindingRepository.NewROSRepository(initializers.ROS[0])
+	firewallRepository := _firewallRepository.NewROSRepository(initializers.ROS[0])
+	simpleQueueRepository := _simpleQueueRepository.NewROSRepository(initializers.ROS[0])
+	timelineRepository := _timelineRepository.NewMysqlRepository(initializers.GORM)
+	nasRepository := _nasRepository.NewMysqlRepository(initializers.GORM)
 	/**
 	 * Defined Application Usecase
 	 */
 	usersUsecase := _usersUsecase.NewUsecase(timeout, usersRepository)
-	resellerUsecase := _resellerUsecase.NewUsecase(timeout, resellerRepository, packageRepository, radcheckRepository, transactionRepository, radacctRepository)
 	packageUsecase := _packageUsecase.NewUsecase(timeout, packageRepository)
-	transactionUsecase := _transactionUsecase.NewUsecase(timeout, transactionRepository)
-	schedulerUsecase := _schedulerUsecase.NewUsecase(timeout, radcheckRepository, radacctRepository)
+	profilesUsecase := _profilesUsecase.NewUsecase(timeout, profilesRepository)
+	vouchersUsecase := _vouchersUsecase.NewUsecase(timeout, vouchersRepository, radcheckRepository, packageRepository)
+	clientsUsecase := _clientsUsecase.NewUsecase(clientsRepository, packageRepository)
+	orderUsecase := _orderUsecase.NewUsecase(
+		timeout,
+		orderRepository,
+		packageRepository,
+		customerRepository,
+		vcrRepository,
+		radcheckRepository,
+		radreplyRepository,
+		clientsRepository,
+		ipbindingRepository,
+		firewallRepository,
+		simpleQueueRepository,
+		initializers.ROS_CLIENT,
+	)
+	customerUsecase := _customerUsecase.NewUsecase(timeout, customerRepository)
+	radgroupUsecase := _radgroupUsecase.NewUsecase(radgroupRepository)
+	schedulerUsecase := _schedulerUsecase.NewUsecase(
+		timeout,
+		radcheckRepository,
+		radacctRepository,
+		orderRepository,
+		ipbindingRepository,
+		firewallRepository,
+		simpleQueueRepository,
+		initializers.ROS_CLIENT,
+	)
+	paymentUcase := _paymentUsecase.NewUsecase(timeout, paymentRepo)
+	dashboardUsecase := _dashboardUsecase.NewUsecase(timeout,
+		customerRepository,
+		clientsRepository,
+		usersRepository,
+		packageRepository,
+		timelineRepository,
+		radacctRepository,
+	)
+	messageUsecase := _messageUsecase.NewUsecase(timeout, vcrRepository)
+	nasUsecase := _nasUsecase.NewUsecase(nasRepository, timeout)
 	/**
 	 * Call all Handler here
 	 */
 	_usersHandler.NewHandler(e, usersUsecase)
-	_resellerHandler.NewHandler(e, resellerUsecase)
 	_packageHandler.NewHandler(e, packageUsecase)
-	_transactionHandler.NewHandler(e, transactionUsecase)
+	_profilesHandler.NewHandler(e, profilesUsecase)
+	_vouchersHandler.NewHandler(e, vouchersUsecase)
+	_clientsHandler.NewHandler(e, clientsUsecase)
+	_orderHandler.NewHandler(e, orderUsecase)
+	_customerHandler.NewHandler(e, customerUsecase)
+	_radgroupHandler.NewHandler(e, radgroupUsecase)
 	_schedulerHandler.NewHandler(schedulerUsecase)
+	_paymentHandler.NewHandler(e, paymentUcase)
+	_dashboardHandler.NewHandler(e, dashboardUsecase)
+	_messageHandler.NewHandler(initializers.REDIS, messageUsecase)
+	_nasHandler.NewHandler(e, nasUsecase)
 	/**
 	 * Call Echo Framework function for run this app
 	 */
