@@ -75,6 +75,8 @@ type RadacctUsecase interface {
 type RadacctRepository interface {
 	FetchWithUsernameBatch(ctx context.Context, usernameList string) (res []Radacct, err error)
 	Get(ctx context.Context, radacct Radacct) (res []Radacct, err error)
+	Find(ctx context.Context, param *Rdacct) (res []Rdacct, err error)
+	Save(ctx context.Context, param *Rdacct) (err error)
 	FindUsernameIn(ctx context.Context, usernamein []string) (res []Rdacct, err error)
 	FindToday(ctx context.Context, todaystart string, todayend string) (res []Rdacct, err error)
 	FindWeek(ctx context.Context, weekbreakdown int) (res []Rdacct, err error)

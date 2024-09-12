@@ -130,6 +130,16 @@ func (m *mysqlRepository) FindMonth(ctx context.Context, targetmonth int, target
 	return
 }
 
+func (m *mysqlRepository) Find(ctx context.Context, param *domain.Rdacct) (res []domain.Rdacct, err error) {
+	err = m.Conng.Find(&res, param).Error
+	return
+}
+
+func (m *mysqlRepository) Save(ctx context.Context, param *domain.Rdacct) (err error) {
+	err = m.Conng.Save(param).Error
+	return
+}
+
 func (m *mysqlRepository) FetchWithUsernameBatch(ctx context.Context, usernameList string) (res []domain.Radacct, err error) {
 	query := "SELECT radacct.*, nas.secret FROM radacct INNER JOIN nas ON nas.nasname = radacct.nasipaddress WHERE acctstoptime is NULL AND username IN(" + usernameList + ")"
 

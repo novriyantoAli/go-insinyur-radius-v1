@@ -3,7 +3,6 @@ package usecase
 import (
 	"bytes"
 	"context"
-	"fmt"
 	"math"
 	"os/exec"
 	"strings"
@@ -106,17 +105,13 @@ func (uc *schedulerUsecase) IncreasePerform(c context.Context, wita *time.Locati
 					var stderr bytes.Buffer
 					cmd.Stdout = &out
 					cmd.Stderr = &stderr
-					err := cmd.Run()
+					cmd.Run()
+					// set date to radacct
+					radacct.Acctstoptime = time.Now()
+					err = uc.RepositoryRadacct.Save(ctx, &radacct)
 					if err != nil {
-						x := out.String()
-						x = strings.ToLower(x)
-						fmt.Println(x)
-						// if strings.Contains(x, "no reply from server for id") {
-						// 	fmt.Println("command: ", command)
-						// }
-						// logrus.Error("exec command err: ", out.String())
-					} else {
-						logrus.Infoln(out.String())
+						logrus.Error(err)
+						err = nil
 					}
 				}
 			}
@@ -175,21 +170,12 @@ func (uc *schedulerUsecase) GuardRadius(c context.Context, wita *time.Location) 
 					var stderr bytes.Buffer
 					cmd.Stdout = &out
 					cmd.Stderr = &stderr
-					err := cmd.Run()
+					cmd.Run()
+					radacct.Acctstoptime = time.Now()
+					err = uc.RepositoryRadacct.Save(ctx, &radacct)
 					if err != nil {
-						x := out.String()
-						x = strings.ToLower(x)
-						if strings.Contains(x, "no reply from server for ids") {
-							fmt.Println("command: ", command)
-						}
-						// logrus.Error("exec command err: ", out.String())
-
-						// if strings.HasPrefix(out.String(), "(0) No reply from server for ID") {
-						// 	fmt.Println("command: ", command)
-						// }
-						// logrus.Error("exec command err: ", out.String())
-					} else {
-						logrus.Infoln(out.String())
+						logrus.Error(err)
+						err = nil
 					}
 				}
 			}
