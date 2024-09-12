@@ -105,13 +105,13 @@ func (uc *schedulerUsecase) IncreasePerform(c context.Context, wita *time.Locati
 					var stderr bytes.Buffer
 					cmd.Stdout = &out
 					cmd.Stderr = &stderr
-					cmd.Run()
-					// set date to radacct
-					radacct.Acctstoptime = time.Now()
-					err = uc.RepositoryRadacct.Save(ctx, &radacct)
+					err = cmd.Run()
 					if err != nil {
-						logrus.Error(err)
-						err = nil
+						err = uc.RepositoryRadacct.StopAcct(ctx, radacct.Radacctid, time.Now())
+						if err != nil {
+							logrus.Error(err)
+							err = nil
+						}
 					}
 				}
 			}
@@ -170,12 +170,13 @@ func (uc *schedulerUsecase) GuardRadius(c context.Context, wita *time.Location) 
 					var stderr bytes.Buffer
 					cmd.Stdout = &out
 					cmd.Stderr = &stderr
-					cmd.Run()
-					radacct.Acctstoptime = time.Now()
-					err = uc.RepositoryRadacct.Save(ctx, &radacct)
+					err = cmd.Run()
 					if err != nil {
-						logrus.Error(err)
-						err = nil
+						err = uc.RepositoryRadacct.StopAcct(ctx, radacct.Radacctid, time.Now())
+						if err != nil {
+							logrus.Error(err)
+							err = nil
+						}
 					}
 				}
 			}

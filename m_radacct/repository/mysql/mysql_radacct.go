@@ -3,6 +3,7 @@ package mysql
 import (
 	"context"
 	"database/sql"
+	"time"
 
 	"github.com/novriyantoAli/go-insinyur-radius-v1/domain"
 	"gorm.io/gorm"
@@ -137,6 +138,11 @@ func (m *mysqlRepository) Find(ctx context.Context, param *domain.Rdacct) (res [
 
 func (m *mysqlRepository) Save(ctx context.Context, param *domain.Rdacct) (err error) {
 	err = m.Conng.Save(param).Error
+	return
+}
+
+func (m *mysqlRepository) StopAcct(ctx context.Context, id uint, date time.Time) (err error) {
+	err = m.Conng.Model(domain.Rdacct{}).Where("radacctid = ?", id).Update("acctstoptime", date).Error
 	return
 }
 

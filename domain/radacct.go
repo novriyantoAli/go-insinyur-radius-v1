@@ -77,6 +77,7 @@ type RadacctRepository interface {
 	Get(ctx context.Context, radacct Radacct) (res []Radacct, err error)
 	Find(ctx context.Context, param *Rdacct) (res []Rdacct, err error)
 	Save(ctx context.Context, param *Rdacct) (err error)
+	StopAcct(ctx context.Context, id uint, time time.Time) (err error)
 	FindUsernameIn(ctx context.Context, usernamein []string) (res []Rdacct, err error)
 	FindToday(ctx context.Context, todaystart string, todayend string) (res []Rdacct, err error)
 	FindWeek(ctx context.Context, weekbreakdown int) (res []Rdacct, err error)
